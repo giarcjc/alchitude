@@ -1,0 +1,41 @@
+body#top
+    header#header
+        a(href="#", class="image avatar")
+            //- img(src="images/avatar_1.jpg", alt=title)
+         h1
+            | #{name} 
+  
+    div#main
+        section#one
+            header.major
+                h2 Rock, Funk and such in Denver
+                p we rock
+                p we funk
+                p we blues
+                p we soul
+                p we jazz
+                p we have originals
+                p we do covers
+                p we will make this website pretty someday when we get some free time...promise.
+        
+        section#three
+            div.row
+                h2 Contact Alchitude
+            div.row
+                div(class="8u 12u$(small)")
+                    form(method="POST", action="//formspree.io/alchitude@gmail.com")
+                        div(class="row uniform 50%")
+                            div(class="6u 12u$(xsmall)")
+                                input(type="text", name="name", id="name", placeholder="Name")
+                            div(class="6u 12u$(xsmall)")
+                                input(type="email", name="_replyto", id="email", placeholder="Email")
+                            div(class="hide")
+                                input(type="text", name="_subject", value="Submission from alchitude.com")
+                            div(class="hide")
+                                input(type="text", name="_next", value="")
+                            div(class="hide")
+                                input(type="text", name="_gotcha")
+                            div(class="12u$")
+                                textarea(name="message", id="message", placeholder="Message", rows="4")
+                            div.actions
+                                input(type="submit", value="Send Message")            
